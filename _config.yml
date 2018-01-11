@@ -56,7 +56,7 @@ defaults:
 
 # Serving
 url: ""
-baseurl: ""
+baseurl: "steve"
 
 # Includes
 include: ["_pages"]
