@@ -7,7 +7,6 @@ avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
 favicon: /favicon.ico
 twitter_handler: your_handler
 analytics_code: UA-XXXXXXX-2
-baseurl: steve
 disqus: your_disqus_site
 
 # Social Accounts
@@ -56,7 +55,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: "steve"
+url: ""
 baseurl: ""
 
 # Includes
