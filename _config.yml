@@ -55,8 +55,8 @@ defaults:
       comments: "true"
 
 # Serving
-url: ""
-baseurl: "steve"
+url: "steve"
+baseurl: ""
 
 # Includes
 include: ["_pages"]
