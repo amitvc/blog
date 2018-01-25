@@ -54,7 +54,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: "https://amitvc.github.io/musing/"
+url: "https://amitvc.github.io/blog/"
 baseurl: ""
 
 # Includes
