@@ -21,4 +21,8 @@ Many programming text books define recursion as function that calls itself. Alth
   LHS can be written as  
   n(n+1)/2 + n+1 = (n+1)(n+2)/2  
   factoring out n+1 we get  
-  (n+1)(n+2)/2 which is equal to RHS
+  (n+1)(n+2)/2 which is equal to RHS  
+Now that we have a refresher on PMI lets look at how we can apply this in our recursive problem solving thinking.
+
+### Recursive thinking
+In this section we build up some techniques that once mastered can be utilized as templates for solving many recursive problems. One common mistake I see people make is to try to visualize and think through how recursive calls will work. This is ok when the problem domain is small but for complex problems this can get tedious and unreasonable. In some ways we have to assume that the solutions for smaller subproblems will work and are correct and all we have to do is apply or combine the smaller solutions to build the complete solution. This is very much like Induction hypothesis where we assume that proof is true for some n and have to prove it is true for n+1. This is what many people call **_Recursive leap of faith_**.
