@@ -16,9 +16,9 @@ Many programming text books define recursion as function that calls itself. Alth
 * Induction hypothesis  
   Assume sum(n) = n(n+1)/2 is true for some n
 * Prove that the theorem is true for n+1 using steps 1 and 2  
-  Sum(n+1) = (n+1) ((n+1)+1)/2
-  1+2+3+...+n+1 = (n+1)((n+1)+1)/2
-  LHS can be written as
-  n(n+1)/2 + n+1 = (n+1)(n+2)/2
-  factoring out n+1 we get
+  Sum(n+1) = (n+1) ((n+1)+1)/2  
+  1+2+3+...+n+1 = (n+1)((n+1)+1)/2  
+  LHS can be written as  
+  n(n+1)/2 + n+1 = (n+1)(n+2)/2  
+  factoring out n+1 we get  
   (n+1)(n+2)/2 which is equal to RHS
