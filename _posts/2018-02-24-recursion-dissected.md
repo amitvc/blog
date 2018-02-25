@@ -35,7 +35,8 @@ In this section we build up some techniques that once mastered can be utilized a
  }
  
  int aggregateSalary = sumOfSalaries(500-1, 500, salaries);
- // Where salaries is an array that contains salary of all 500 ppl.  
- //  n is total number of people
+ /* Where salaries is an array that contains salary of all  
+   500 ppl.n is total number of people  
+   */
 {% endhighlight %} 
 {: .text-justify}
