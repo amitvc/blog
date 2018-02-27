@@ -39,16 +39,65 @@ In this section we build up some techniques that once mastered can be utilized a
    500 ppl.n is total number of people  
    */
 {% endhighlight %} 
-If you look at the code above you will see at line 5 you add your own salary to the aggregate salaries of all prior. The base case is when you are the first person in the line. In that case we treat the problem as just returning the current salary.
-Lets look at another tricky problem that has an elegant recursive solution. 
-Invert a binary tree: Given a binary tree our goal is to invert it. Lets put on our recursive thinking hat and break down the problem. Lets try to write the pseudo code first. 
+If you look at the code above you will see at line 5 you add your own salary to the aggregate salaries of all prior. The base case is when you are the first person in the line. In that case we treat the problem as just returning the current salary.  
+Lets look at another tricky problem that has an elegant recursive solution.
+Invert a binary tree:  
+Given a binary tree our goal is to invert it. See image below  
+<figure>
+    <img src="https://s3.amazonaws.com/amitchavan/blog/recursion/InvertTree.jpeg"/>
+</figure>
+Lets put on our recursive thinking hat and break down the problem. First at any given node we expect the right and left subtree below the node have already been inverted. Once that has happened our task is simply to replace the current nodes left subtree with the current nodes right subtree and vice-versa. So we take a **_Recursive leap of faith_** in assuming that our left and right child subtrees have already been reverted and now our current task only has to swap the left and right child. 
+Lets see how we express this in pseudo code. 
 ```
    invert(node n) {
+       if n is null return
        invert(left child of n)
        invert(right child of n)
        swap left and right child of n.
    }
-      
-```
+```  
+It turns out using recursion the solution to this problem turns out to be very compact code and very natural to express in terms of recursive strategy. See code below  
+{% highlight java  %}
+   public class InvertBinaryTree {
+  
+  public static class Node {
+    public Node left, right;
+    public int val;
+    public Node(int v) {
+      this.val = v;
+    }
+  }
+  
+  public static void invert(Node n) {
+    if(n == null) {
+      return;
+    }
+    //Invert my left subtree first
+    invert(n.left);
+    // Then invert my right subtree
+    invert(n.right);
+    //If i come here it means my left and right child subtrees 
+    //are already inverted and now
+    // my task is to simply swap my children 
+    Node temp = n.left;
+    n.left = n.right;
+    n.right = temp;
+  }
 
+  public static void main(String[] args) {
+    Node n20  = new Node(20);
+    Node n35 = new Node(35);
+    Node n15 = new Node(15);
+    Node n10 = new Node(10);
+    Node n18 = new Node(18);
+    Node n40 = new Node(40);
+    
+    n20.left = n15;
+    n20.right = n35;
+    n15.left = n10;
+    n15.right = n18;
+    n35.right = n40;
+    invert(n20);
+  }
+}
 {: .text-justify}
