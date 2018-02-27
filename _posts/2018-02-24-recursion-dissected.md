@@ -40,4 +40,15 @@ In this section we build up some techniques that once mastered can be utilized a
    */
 {% endhighlight %} 
 If you look at the code above you will see at line 5 you add your own salary to the aggregate salaries of all prior. The base case is when you are the first person in the line. In that case we treat the problem as just returning the current salary.
+Lets look at another tricky problem that has an elegant recursive solution. 
+Invert a binary tree: Given a binary tree our goal is to invert it. Lets put on our recursive thinking hat and break down the problem. Lets try to write the pseudo code first. 
+```
+   invert(node n) {
+       invert(left child of n)
+       invert(right child of n)
+       swap left and right child of n.
+   }
+      
+```
+
 {: .text-justify}
