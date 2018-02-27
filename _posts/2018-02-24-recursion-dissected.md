@@ -101,4 +101,9 @@ It turns out using recursion the solution to this problem turns out to be very c
   }
 }
 {% endhighlight %}
+
+#### Good resources  
+* https://www.codingninjas.in
+* https://www.amazon.com/Introduction-Recursive-Programming-Manuel-Rubio-Sanchez/dp/1498735282
+
 {: .text-justify}
