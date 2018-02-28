@@ -3,6 +3,13 @@ layout: post
 date: 2018-02-27 20:17
 title:  "String Permutation"
 mood: happy
+category: 
+- string permutation
+- recursion
+tags:
+- recurion
+- algorithms
+- programming
 ---
 
 #### Problem Statement

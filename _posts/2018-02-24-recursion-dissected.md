@@ -3,6 +3,13 @@ layout: post
 date: 2018-02-24 22:40
 title:  "Recursion Dissected"
 mood: happy
+category: 
+- algorithms
+- recursion
+tags:
+- recursion
+- algorithms
+- programming
 ---
 
 ### Introduction
