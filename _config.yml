@@ -8,6 +8,9 @@ favicon: /favicon.ico
 analytics_code: UA-113089955-1
 disqus: https-amitvc-github-io-blog
 
+plugins:
+  - jekyll-seo-tag
+
 # Social Accounts
 social_networks:
 -  { name: facebook, url: 'http://facebook.com' }
