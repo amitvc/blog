@@ -15,7 +15,7 @@ tags:
 #### Problem Statement
 The problem we are going to formalute a solution is as follows  
 Given a string of of size 'n' find all permutations of the string.  
-So if given string is "abc" the answer will be {'abc','acb','bac','bca','cab','cba'}. So for a string of size n the number of permutations we will have is n!. When string is size=3 the permutations function will return an array of 3! strings which 6 strings.This problem has a very elegant solution if expressed via recursion. Let us try to build our intuition for this problem first before we write any code. We will look at string "abc" and try to break down the problem in recursive template.  
+So if given string is "abc" the answer will be {'abc','acb','bac','bca','cab','cba'}. So for a string of size n the number of permutations we will have is n!. When string is size=3 the permutations function will return an array of 3!(factorial) strings which is 6 strings.This problem has a very elegant solution if expressed via recursion. Let us try to build our intuition for this problem first before we write any code. We will look at string "abc" and try to break down the problem in recursive template.  
 permutation("abc") can be broken down into one set of subproblem  such as 
 a + permutation("bc"). Suppose I told you that the permutation("bc") will be provided to you, then your problem will be simple as prepending 'a' to the strings in result set. It will look something like this  
 permutation("bc") --> ["bc", "cb"] and now we prepend 'a' to these individual strings to get the following set ["abc", "acb"]. This provides us the partial subset of our answer. Similarly we will have to do this for every character in the string. See below
