@@ -15,12 +15,12 @@ tags:
 #### Problem Statement
 Given a string containing numbers from 2-9 enumerate all possible combinations that the number could represent. Each number is mapped to 3 or 4 digit code as shown in the image below. 
 <figure>
-    <img src="https://s3.amazonaws.com/amitchavan/blog/phone_number/digits.jpeg"/>
+    <img src="https://s3.amazonaws.com/amitchavan/blog/phone_number/digits.png"/>
 </figure>
 
 For example
  
 ```
-**Input:**"23"
-**Output:**["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+Input:"23"
+Output:["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 ```
