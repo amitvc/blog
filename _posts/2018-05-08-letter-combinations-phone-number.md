@@ -26,7 +26,8 @@ Output:["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 ```
 
 If we assume that every number has 3 character long code then the number of possible combinations for string of length n will be 3^n. Example above a string of length 2 you will get 3^2 possible combinations. This problem is really extension of String permutation about which I wrote in previous blog. Below is source code for solving the problem using recursion.
-{% highlight java%}
+{% highlight java  %}
+
 public class PhoneNumberDigits {
 
   public static Map<Character, String> lookup = new HashMap<>();
@@ -61,4 +62,4 @@ public class PhoneNumberDigits {
     }
   }
 }
-{% end highlight%}
+{% endhighlight %} 
